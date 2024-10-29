@@ -449,6 +449,7 @@ a:focus {
 .slider_section .detail-box .btn-box .btn1:hover {
   background-color: transparent;
   color: #2c7873;
+  
 }
 
 .slider_section .img-box img {
@@ -570,7 +571,7 @@ a:focus {
   border-radius: 0;
   -webkit-transition: all .3s;
   transition: all .3s;
-  border: 1px solid #2c7873;
+  /* border: 1px solid #2c7873; */
 }
 
 .service_section .btn-box a:hover {
@@ -719,7 +720,7 @@ a:focus {
   border-radius: 5px;
   -webkit-transition: all .3s;
   transition: all .3s;
-  border: 1px solid #2c7873;
+  /* border: 1px solid #2c7873; */
 }
 
 .team_section .btn-box a:hover {
@@ -789,18 +790,19 @@ a:focus {
   border: none;
   display: inline-block;
   padding: 12px 55px;
-  background-color: #2c7873;
+  /* background-color: #2c7873; */
+  background: linear-gradient(19deg, var(--color-3), var(--color-2));
   color: #ffffff;
   border-radius: 0px;
   -webkit-transition: all .3s;
   transition: all .3s;
-  border: 1px solid #2c7873;
+  /* border: 1px solid #2c7873; */
   width: 100%;
 }
 
 .contact_section .form_container .btn_box button:hover {
   background-color: transparent;
-  color: #2c7873;
+  color: black !important;
 }
 
 .contact_section .img-box {
@@ -887,7 +889,8 @@ a:focus {
 }
 
 .info_section {
-  background-color: #004445;
+  /* background-color: #004445; */
+  background: linear-gradient(-19deg, var(--color-2), var(--color-4));
   color: #ffffff;
   padding: 45px 0 10px 0;
 }
@@ -1078,6 +1081,18 @@ input[type="radio"]:checked + label {
   padding: 0px 20px;
 
 }
+
+.wrapper-photos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+  padding: 0px 20px;
+
+}
+
+
 .pricing-table{
  box-shadow: 0px 0px 18px #ccc;
  text-align: center;
@@ -1220,3 +1235,4 @@ transform:scale(0);
 .no-paddingleft {
   padding-left: 0px;
 }
+

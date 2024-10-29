@@ -99,6 +99,11 @@
   .carousel_btn-box {
     margin-top: 30px;
   }
+
+  .switch-container{
+    width: 300px;
+  }
+
 }
 
 @media (max-width: 480px) {}

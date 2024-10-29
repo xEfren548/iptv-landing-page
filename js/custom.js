@@ -77,6 +77,31 @@ function myMap() {
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 }
 
+function togglePlans() {
+    console.log("Toggle plans")
+    
+    if (btnBud.is(':checked')) {
+        // budtvWrapper.style.display = 'block';
+        wrapperBud.show();
+        wrapperKaelus.hide();
+        // kaelusWrapper.style.display = 'none';
+    } else {
+        // budtvWrapper.style.display = 'none';
+        wrapperKaelus.show();
+        wrapperBud.hide();
+        // kaelusWrapper.style.display = 'block';
+    }
+}
+
+var wrapperKaelus = $('#wrapper-kaelus');
+var wrapperBud = $('#wrapper-budtv');
+
+var btnKaelus = $('#kaelus');
+var btnBud = $('#budtv');
+
+btnKaelus.on('change', togglePlans);
+btnBud.on('change', togglePlans);
+
 // nice select
 $(document).ready(function () {
     $('select').niceSelect();
